@@ -38,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 # Front gem
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
-gem 'font-awesome-sass', '~> 4.7'
+gem 'font-awesome-sass'
 gem 'simple_form'
 
 group :development, :test do
