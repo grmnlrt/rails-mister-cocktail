@@ -22,7 +22,8 @@
           <% end %>
         </tbody>
       </table>
-      <%= link_to "Add new ingredient", new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
+
+      <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
       <%= link_to "Back to all cocktails", root_path %>
     </div>
   </div>
