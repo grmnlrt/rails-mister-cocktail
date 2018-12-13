@@ -1,0 +1,10 @@
+
+
+
+<%= simple_form_for(article) do |f| %>
+  <!-- [...] -->
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
+  <!-- [...] -->
+<% end %>
+

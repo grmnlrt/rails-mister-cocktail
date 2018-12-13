@@ -29,6 +29,9 @@
         </tbody>
       </table>
     </div>
+
+    <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+
     <div class="col-sm-12 col-md-6">
       <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
     </div>
