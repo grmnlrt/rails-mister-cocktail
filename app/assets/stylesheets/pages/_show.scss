@@ -17,6 +17,7 @@
 
 .linkback a:hover {
   text-decoration:none;
+  color:#F9C0C3;
 }
 
 /* COCKTAIL IMAGE */
@@ -35,6 +36,7 @@
 .cocktailname {
   font-family: georgia;
   font-size: 9vh;
+  color:#523E40;
 }
 
 .showinfo {
@@ -58,7 +60,7 @@
   opacity: 0.5;
 }
 
-.recipetable {
+.ingredienttable {
   border-left: 9px solid #F4FFDD;
   margin-top:7vh;
   margin-bottom: 5vh;
@@ -69,6 +71,9 @@
   margin-bottom:0vh!important;
   margin-left: 1.5vh;
   width:25vw!important;
+  height: 25vh;
+  overflow-y: scroll;
+  display: block;
 }
 
 .tableheadings {
@@ -81,6 +86,7 @@
 .table > tbody > tr > td {
   border-top:1px solid beige!important;
   text-align:center!important;
+  color:#523E40;
 }
 
 /* REVIEW COMMENTS*/
@@ -101,18 +107,22 @@
 .fa {
   color: #F9C0C3;
   text-decoration: none
- }
+}
 
 .list-group-item {
   border-top: 1px solid beige!important;
   border-bottom:1px solid white!important;
   border-left:1px solid white!important;
   border-right:1px solid white!important;
+  color: #523E40;
 }
 
 .list-group {
   width: 25vw!important;
   margin-left:1vh;
+  height: 5vh;
+  overflow-y: scroll;
+  display: block;
 }
 
 
@@ -142,7 +152,6 @@
   margin-right: 9px;
   margin-top: -9px;
 }
-
 
 .modalbtn:hover {
   text-decoration:none;
@@ -174,6 +183,9 @@
 
 
 
+
+
+
 .btn-group-lg>.btn, .btn-lg {
     /* padding: 10px 16px; */
     font-size: 12px;
@@ -192,9 +204,6 @@
     text-transform: uppercase;
     opacity: 0.5;
 }
-
-
-
 
 
 .row {
