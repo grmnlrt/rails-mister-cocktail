@@ -1,0 +1,189 @@
+/* LINK BACK TO HOMEPAGE */
+.linkback {
+  background-color: white;
+  width: 22vh;
+  font-size: 2vh;
+  padding: 1vh;
+  border-radius: 6px;
+  padding-left: 13px;
+  position: absolute;
+  left: -1vh;
+  bottom: 13vh;
+}
+
+.linkback a {
+  color:#F9C0C3;
+}
+
+.linkback a:hover {
+  text-decoration:none;
+}
+
+/* COCKTAIL IMAGE */
+.show-image {
+  height:100vh;
+  width:94vw;
+}
+
+.layout {
+  display:flex;
+  background-color:white;
+  position:relative;
+}
+
+/* SHOW PAGE INFO */
+.cocktailname {
+  font-family: georgia;
+  font-size: 9vh;
+}
+
+.showinfo {
+  display: flex;
+}
+
+.showpageinfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6vh;
+  padding: -1vh;
+}
+
+/* INGREDIENTS */
+.headers {
+  font-size: 13px;
+  margin-left: 1vh;
+  margin-top: 0vh;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.recipetable {
+  border-left: 9px solid #F4FFDD;
+  margin-top:7vh;
+  margin-bottom: 5vh;
+}
+
+/* REVIEW COMMENTS*/
+.badge {
+  background-color:beige!important;
+}
+
+.list-group-item {
+  border-top: 1px solid white!important;
+}
+
+.reviews {
+  font-size:2vh;
+  width:21vw;
+}
+
+.review {
+  margin-bottom: -30vh;
+}
+
+.fa {
+  color: #F9C0C3;
+  text-decoration: none
+ }
+
+/* ADD INGREDIENT MODAL */
+#myModal {
+  top: 13vh;
+  right: -165vh;
+  outline: none;
+}
+
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid white;
+  margin-top: 21vh;
+}
+
+.modalbtn {
+  width: 14vw;
+  border-radius: 25px;
+  font-size: 10px;
+  padding: 1.5vh;
+  background-color: #F9C0C3;
+  color: white;
+  border: 1px solid #F9C0C3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modalbtn:hover {
+  text-decoration:none;
+}
+
+.dose {
+  width:41vw;
+}
+
+.doses {
+      margin-left: -2vh;
+    width: 36vw;
+}
+
+/* ADD REVIEW MODAL */
+#myModal1 {
+    top: 13vh;
+    right: -165vh;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-group-lg>.btn, .btn-lg {
+    /* padding: 10px 16px; */
+    font-size: 12px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    }
+
+.table > tbody > tr > td {
+  border-top:1px solid white;
+}
+
+
+.heading h3 {
+   font-size: 13px;
+    margin-left: 1vh;
+    margin-top: 0vh;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+
+.table {
+        font-size:2vh;
+        margin-bottom:0vh;
+}
+
+
+.list-group {
+  margin-bottom:-7vh;
+}
+
+
+.row {
+  margin:0;
+}
+
+.form-group {
+  font-size:2vh;
+}

@@ -1,18 +1,23 @@
 .card {
-  height: 175px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-size: cover !important;
-  background-position: center;
-  color: white;
-  position: relative;
+      height: 47vh;
+    background-size: cover !important;
+    background-position: center;
+    color: white;
+    position: relative;
+    margin-bottom: 7vh;
+    border-radius:2vh;
 }
-.card-description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-.card-description h2 {
-  font-size: 24px;
+
+
+.card h2 {
+  font-size: 3vh;
+    padding: 3vh;
+    font-family: georgia;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 24vh;
+    letter-spacing:1px;
 }
 .card-link {
   position: absolute;
@@ -27,3 +32,5 @@
 .card-link:hover {
   opacity: 0.1;
 }
+
+

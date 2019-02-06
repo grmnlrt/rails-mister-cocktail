@@ -1,67 +1,129 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h1><%= @cocktail.name %></h1>
-      <%= link_to "Back to all cocktails", root_path %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 col-md-6">
-      <h3>Recipe</h3>
-      <table class="table table-bordered">
-        <tbody>
-          <thead>
-            <th>Ingredient</th>
-            <th>Description</th>
-            <th>Action</th>
-          </thead>
-          <% @cocktail.doses.each do |dose| %>
-            <tr>
-              <td><%= dose.ingredient.name %></td>
-              <td><%= dose.description %></td>
-              <td>
-                <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
-                  <i class="fa fa-trash destroy_dose"></i>
-                <% end %>
-              </td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
+<head>
+   <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
 
-    <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+<body>
+  <div class="layout">
+    <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill, class: "show-image" %>
+    <div class="container">
+<!------------ LINK BACK-------------------->
+      <div class="linkback"><%= link_to "Back to all cocktails", root_path %></div>
+<!------------SHOW PAGE INFO-------------------->
+        <div class="showpageinfo">
+           <div>
+              <h1 class="cocktailname"><%= @cocktail.name.downcase%></h1>
+           </div>
+  <!----------INGREDIENT LIST-------------------->
+           <div class="recipetable">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <h3 class="headers">Ingredients</h3>
+                  <table class="table">
+                    <tbody>
+                      <thead>
+                       <!--  <th>Ingredient</th>
+                        <th>Description</th>
+                        <th>Action</th> -->
+                      </thead>
+                      <% @cocktail.doses.each do |dose| %>
+                        <tr>
+                          <td><%= dose.description %></td>
 
-    <div class="col-sm-12 col-md-6">
-      <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
-    </div>
+                          <td><%= dose.ingredient.name %></td>
+                          <td class="a">
+                            <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
+                              <i class="fa fa-trash destroy_dose"></i>
+                            <% end %>
+                          </td>
+                        </tr>
+                      <% end %>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+  <!----------REVIEW COMMENTS------------------->
+            <div class="reviews">
+            <div class="row">
+            <div class="col-xs-12">
+              <h3 class="headers">Reviews</h3>
+              <% if @cocktail.reviews.empty? %>
+                <p>Be the first to let a review</p>
+              <% else %>
+                <ul class="list-group">
+                  <% @cocktail.reviews.each do |review| %>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge badge-primary badge-pill">
+                        <% counter = 0 %>
+                        <% 5.times do %>
+                          <i class="fa <%= review.rating > counter ? 'fa-star' : 'fa-star-o' %>"></i>
+                          <% counter += 1 %>
+                        <% end %>
+                      </span>
+                    <%= review.content %>
+                          </li>
+                        <% end %>
+                  </ul>
+                  <% end %>
+                </div>
+                </div>
+              </div>
+            </div>
+     <!------ ADD AN INGREDIENT MODAL ---------------->
+            <button class="modalbtn" data-toggle="modal" data-target="#myModal">I</button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="vertical-alignment-helper">
+                        <div class="modal-dialog vertical-align-center">
+                            <div class="modal-content">
+
+                              <div class="modal-body">
+                                <div class="doses">
+                               <div class="dose">
+                                  <div class="col-sm-12 col-md-6">
+                                    <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+     <!------ ADD A REVIEW MODAL ---------------->
+            <button class="modalbtn" data-toggle="modal" data-target="#myModal1">R</button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="vertical-alignment-helper">
+                        <div class="modal-dialog vertical-align-center">
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                   <div class="review">
+                                  <div class="row">
+                                    <div class="col-xs-12">
+                                      <%= render "reviews/new", cocktail: @cocktail, review: @review %>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                          <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+<!-----end of container div------>
   </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <h3>Reviews</h3>
-      <% if @cocktail.reviews.empty? %>
-        <p>Be the first to let a review</p>
-      <% else %>
-        <ul class="list-group">
-          <% @cocktail.reviews.each do |review| %>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              <span class="badge badge-primary badge-pill">
-                <% counter = 0 %>
-                <% 5.times do %>
-                  <i class="fa <%= review.rating > counter ? 'fa-star' : 'fa-star-o' %>"></i>
-                  <% counter += 1 %>
-                <% end %>
-              </span>
-              <%= review.content %>
-            </li>
-          <% end %>
-        </ul>
-      <% end %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <%= render "reviews/new", cocktail: @cocktail, review: @review %>
-    </div>
-  </div>
+<!-----end of layout div------>
 </div>
+</body>

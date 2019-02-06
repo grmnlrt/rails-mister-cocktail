@@ -7,17 +7,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-left:38vw;
 }
 .banner h1 {
-  font-size: 50px;
+  font-size: 9vw;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  color: black;
+  font-family: georgia;
+  letter-spacing: -14px;
 }
+
+
+.in {
+  margin-left: -155vh;
+}
+
+
+.the {
+    margin-left: -122vh;
+    margin-top: -6vh;
+}
+
+.mood {
+  margin-right: 60vh;
+  margin-top: -9vh
+}
+
+
 .banner p {
-  font-size: 25px;
-  font-weight: lighter;
-  color: rgb(255, 255, 255);
-  opacity: 0.6;
-  margin-bottom: 30px;
+  font-size: 2vh;
+  font-weight: thin;
+  color: black;
+/*  opacity: 0.8;*/
+  position: absolute;
+    bottom: -1vh;
+    left:1vh;
+
 }
