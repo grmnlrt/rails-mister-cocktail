@@ -20,7 +20,10 @@
            <div class="recipetable">
               <div class="row">
                 <div class="col-sm-12 col-md-6">
+                <div class="tableheadings">
                   <h3 class="headers">Ingredients</h3>
+                   <button class="modalbtn" data-toggle="modal" data-target="#myModal">+</button>
+                </div>
                   <table class="table">
                     <tbody>
                       <thead>
@@ -47,9 +50,12 @@
             </div>
   <!----------REVIEW COMMENTS------------------->
             <div class="reviews">
-            <div class="row">
-            <div class="col-xs-12">
-              <h3 class="headers">Reviews</h3>
+              <div class="row">
+              <div class="col-xs-12">
+              <div class="tableheadings">
+                <h3 class="headers">Reviews</h3>
+                 <button class="modalbtn" data-toggle="modal" data-target="#myModal1">+</button>
+                </div>
               <% if @cocktail.reviews.empty? %>
                 <p>Be the first to let a review</p>
               <% else %>
@@ -73,7 +79,6 @@
               </div>
             </div>
      <!------ ADD AN INGREDIENT MODAL ---------------->
-            <button class="modalbtningredient" data-toggle="modal" data-target="#myModal">+</button>
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="vertical-alignment-helper">
@@ -98,7 +103,6 @@
                     </div>
                 </div>
      <!------ ADD A REVIEW MODAL ---------------->
-            <button class="modalbtnreview" data-toggle="modal" data-target="#myModal1">+</button>
                 <!-- Modal -->
                 <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="vertical-alignment-helper">

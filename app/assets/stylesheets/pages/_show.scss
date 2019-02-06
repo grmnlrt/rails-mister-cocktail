@@ -51,7 +51,7 @@
 /* INGREDIENTS */
 .headers {
   font-size: 13px;
-  margin-left: 1vh;
+  margin-left: 2vh;
   margin-top: 0vh;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -64,18 +64,34 @@
   margin-bottom: 5vh;
 }
 
+.table {
+  font-size: 13px;
+  margin-bottom:0vh!important;
+  margin-left: 1.5vh;
+  width:25vw!important;
+}
+
+.tableheadings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25vw;
+}
+
+.table > tbody > tr > td {
+  border-top:1px solid beige!important;
+  text-align:center!important;
+}
+
 /* REVIEW COMMENTS*/
 .badge {
   background-color:beige!important;
 }
 
-.list-group-item {
-  border-top: 1px solid white!important;
-}
-
 .reviews {
-  font-size:2vh;
-  width:21vw;
+  font-size: 2vh;
+  margin-top: 2vh;
+  margin-left: 1vh;
 }
 
 .review {
@@ -86,6 +102,19 @@
   color: #F9C0C3;
   text-decoration: none
  }
+
+.list-group-item {
+  border-top: 1px solid beige!important;
+  border-bottom:1px solid white!important;
+  border-left:1px solid white!important;
+  border-right:1px solid white!important;
+}
+
+.list-group {
+  width: 25vw!important;
+  margin-left:1vh;
+}
+
 
 /* ADD INGREDIENT MODAL */
 #myModal {
@@ -101,19 +130,19 @@
   margin-top: 21vh;
 }
 
-.modalbtningredient {
+.modalbtn {
   border-radius: 50%;
-  padding: 10px;
+  padding: 2px;
   background-color: #F9C0C3;
   color: white;
   border: 1px solid #F9C0C3;
-  width: 3vw;
-  top: -35vh;
-  right: -46vh;
-  position: relative;
-  font-size: 16px;
+  width: 2vw;
+  font-size: 15px;
   font-weight: lighter;
+  margin-right: 9px;
+  margin-top: -9px;
 }
+
 
 .modalbtn:hover {
   text-decoration:none;
@@ -135,23 +164,6 @@
   outline: none;
 }
 
-.modalbtnreview {
-  border-radius: 50%;
-  padding: 10px;
-  background-color: #F9C0C3;
-  color: white;
-  border: 1px solid #F9C0C3;
-  width: 3vw;
-  top: -4vh;
-  right: -39.5vh;
-  position: relative;
-  font-size: 16px;
-  font-weight: lighter;
-}
-
-
-
-
 
 
 
@@ -169,9 +181,7 @@
     border-radius: 6px;
     }
 
-.table > tbody > tr > td {
-  border-top:1px solid white;
-}
+
 
 
 .heading h3 {
@@ -184,15 +194,7 @@
 }
 
 
-.table {
-        font-size:2vh;
-        margin-bottom:0vh;
-}
 
-
-.list-group {
-  margin-bottom:-7vh;
-}
 
 
 .row {
