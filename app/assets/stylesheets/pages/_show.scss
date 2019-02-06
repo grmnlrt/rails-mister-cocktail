@@ -101,16 +101,18 @@
   margin-top: 21vh;
 }
 
-.modalbtn {
-  width: 14vw;
-  border-radius: 25px;
-  font-size: 10px;
-  padding: 1.5vh;
+.modalbtningredient {
+  border-radius: 50%;
+  padding: 10px;
   background-color: #F9C0C3;
   color: white;
   border: 1px solid #F9C0C3;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  width: 3vw;
+  top: -35vh;
+  right: -46vh;
+  position: relative;
+  font-size: 16px;
+  font-weight: lighter;
 }
 
 .modalbtn:hover {
@@ -122,17 +124,30 @@
 }
 
 .doses {
-      margin-left: -2vh;
-    width: 36vw;
+  margin-left: -2vh;
+  width: 36vw;
 }
 
 /* ADD REVIEW MODAL */
 #myModal1 {
-    top: 13vh;
-    right: -165vh;
-    outline: none;
+  top: 13vh;
+  right: -165vh;
+  outline: none;
 }
 
+.modalbtnreview {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #F9C0C3;
+  color: white;
+  border: 1px solid #F9C0C3;
+  width: 3vw;
+  top: -4vh;
+  right: -39.5vh;
+  position: relative;
+  font-size: 16px;
+  font-weight: lighter;
+}
 
 
 
