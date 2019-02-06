@@ -70,10 +70,13 @@
   font-size: 13px;
   margin-bottom:0vh!important;
   margin-left: 1.5vh;
-  width:25vw!important;
-  height: 25vh;
-  overflow-y: scroll;
+}
+
+.scrolltable {
+  height: 28vh;
   display: block;
+  overflow: scroll;
+  width: 25vw;
 }
 
 .tableheadings {
@@ -120,7 +123,7 @@
 .list-group {
   width: 25vw!important;
   margin-left:1vh;
-  height: 5vh;
+  height: 28vh;
   overflow-y: scroll;
   display: block;
 }
