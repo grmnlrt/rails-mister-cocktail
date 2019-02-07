@@ -87,21 +87,21 @@
                         <div class="modal-dialog vertical-align-center">
                             <div class="modal-content">
                               <div class="modal-body">
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
                                 <div class="doses">
                                <div class="dose">
                                   <div class="col-sm-12 col-md-6">
                                     <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
-
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="modal-footer">
-                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                            </div>
-                            </div>
+                           <div class="modal-footer">
+                          </div>
                         </div>
+                      </div>
                     </div>
                 </div>
      <!------ ADD A REVIEW MODAL ---------------->
@@ -111,6 +111,9 @@
                         <div class="modal-dialog vertical-align-center">
                             <div class="modal-content">
                               <div class="modal-body">
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                  </button>
                                    <div class="review">
                                   <div class="row">
                                     <div class="col-xs-12">
@@ -118,9 +121,8 @@
                                     </div>
                                   </div>
                                 </div>
-                            </div>
-                          <div class="modal-footer">
-                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              </div>
+                            <div class="modal-footer">
                           </div>
                         </div>
                       </div>
