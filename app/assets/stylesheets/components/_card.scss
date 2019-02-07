@@ -1,24 +1,32 @@
 .card {
-      height: 47vh;
-    background-size: cover !important;
-    background-position: center;
-    color: white;
-    position: relative;
-    margin-bottom: 7vh;
-    border-radius:2vh;
+  height: 52vh;
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  margin-bottom: 7vh;
+  border-radius: 2vh;
+  width: 27vw;
+  display: inline-block;
+  margin-left: 2vh;
 }
-
 
 .card h2 {
   font-size: 3vh;
-    padding: 3vh;
-    font-family: georgia;
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    top: 24vh;
-    letter-spacing:1px;
+  padding: 3vh;
+  font-family: georgia;
+  color: white;
+  position: absolute;
+  top: 24vh;
+  letter-spacing:1px;
 }
+
+.cards {
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 98vw;
+}
+
 .card-link {
   position: absolute;
   top: 0;
@@ -29,8 +37,7 @@
   background: black;
   opacity: 0;
 }
+
 .card-link:hover {
   opacity: 0.1;
 }
-
-

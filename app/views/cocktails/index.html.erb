@@ -1,34 +1,30 @@
+<!----------------BANNER-------------------->
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://images.pexels.com/photos/1493378/pexels-photo-1493378.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
   <div class="banner-content">
     <h1 class="in">in</h1>
      <h1 class="the">the</h1>
       <h1 class="mood">mood?</h1>
-
-<p>
-  <span id="banner-typed-text"></span>
-</p>
-
-
         <p>bespoke and carefully crafted cocktails designed to match your mood</p>
         <%= link_to "Add a cocktail", new_cocktail_path, class: "create-button" %>
   </div>
 </div>
-
-
+<!----------------CONTAINER------------------->
 <div class="container">
-  <div class="row">
-    <% @cocktails.each do |cocktail| %>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="card"
+  <!----------------CARDS------------------->
+<!--   <div class="row"-->
+ <div class="cards">
+  <% @cocktails.each do |cocktail| %>
+<!--       <div class="col-xs-12 col-sm-6 col-md-3" -->
+  <div class="card"
           style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
                  url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill unless cocktail.photo.blank? %>')">
             <h2><%= cocktail.name.downcase %></h2>
-          <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
-        </div>
-      </div>
+             <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+       </div>
     <% end %>
-     </div>
   </div>
+  <!--   </div></div> -->
+
 </div>
 
 
