@@ -3,23 +3,23 @@
   <%= video_tag "cocktail1.mov", controls: false, autoplay: true, muted:
   true, loop: true, class: "video"  %>
 </div>
-<!----------------landing page iNFO------------------>
-
+<!----------------landing page title------------------>
 <div class="titlelink">
   <h1>what are you</h1>
   <div class="title">in the <strong>mood</strong></div>
   <h1>for today?</h1>
-
   <div class=createbutton>
-  <%= link_to "+ Create your own mood cocktail", new_cocktail_path, class: "create-button" %>
+  <%= link_to "+ create your own mood cocktail", new_cocktail_path, class: "create-button" %>
   </div>
 </div>
-
-<div class="description">
-  <p>bespoke and carefully crafted cocktails designed to match your mood</p>
+<!---------------second page------------------>
+<div class="descriptioncontainer">
+  <div class="description">
+    <p><strong>bespoke</strong> and <strong>carefully crafted cocktails</strong> designed to match your <strong>mood</strong></p>
+  </div>
 </div>
-<!----------------CONTAINER------------------->
-<div class="container">
+<!----------------CARDS CONTAINER------------------->
+<div class="cardcontainer">
 <!----------------CARDS------------------->
  <div class="cards">
   <% @cocktails.each do |cocktail| %>

@@ -6,13 +6,19 @@
 
 /* CREATE A COCKTAIL */
 .create-button:hover {
+  color: white;
   text-decoration: none;
+  font-size:2vh;
+  border: 1px solid;
+  padding: 2.5vh;
 }
 
 .create-button {
   color: white;
   text-decoration: none;
   font-size:2vh;
+  border: 1px solid;
+  padding: 2.5vh;
 }
 
 .createbutton {
@@ -20,10 +26,12 @@
   margin-top: 8vh;
 }
 
-/* CONTAINER */
-.container {
+/* CARD CONTAINER */
+.cardcontainer {
   margin-top: 4vh;
   margin-left: 0vh;
+  background-color: white;
+  padding-top: 5vh;
 }
 
 .row {
@@ -55,14 +63,6 @@
   text-shadow: 4px 4px #F9C0C3;
  }
 
-.description {
-  color: white;
-  font-size: 16px;
-  position: absolute;
-  bottom: 4vh;
-  right: 113vh;
-}
-
 .titlelink {
   position: absolute;
   top: 52vh;
@@ -76,5 +76,28 @@
   margin-top: -1vh;
   margin-bottom: -1vh;
 }
+
+/* DESCRIPTION CONTAINER */
+.descriptioncontainer {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 50vh;
+  margin-bottom: -4vh;
+}
+
+.description {
+  color: black;
+  font-size: 29px;
+  width: 30vw;
+  font-family: georgia;
+  text-align: center;
+  border-bottom: 2px solid beige;
+  border-top: 2px solid beige;
+  padding: 3vh;
+}
+
 
 
