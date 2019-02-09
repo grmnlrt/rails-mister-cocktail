@@ -4,19 +4,20 @@
 @import "banner";
 @import "card";
 
-
 /* CREATE A COCKTAIL */
 .create-button:hover {
   text-decoration: none;
 }
 
 .create-button {
- color: white;
+  color: white;
   text-decoration: none;
-  position: absolute;
-  top: 3vh;
-  right: 5vh;
   font-size:2vh;
+}
+
+.createbutton {
+  text-align:center;
+  margin-top: 8vh;
 }
 
 /* CONTAINER */
@@ -25,16 +26,55 @@
   margin-left: 0vh;
 }
 
-
-
-
-
-
-
-
-
-
-
 .row {
   margin-top:7vh;
 }
+
+/* VIDEO */
+.video {
+  object-fit: cover!important;
+  min-width: 100%;
+  max-width: 100%;
+  opacity:0.6;
+}
+
+.videocontainer {
+  background:#F9C0C3;
+}
+
+/* TITLE */
+.title {
+  font-family: georgia;
+  color: white;
+  font-size: 51px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.title strong {
+  text-shadow: 4px 4px #F9C0C3;
+ }
+
+.description {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  bottom: 4vh;
+  right: 113vh;
+}
+
+.titlelink {
+  position: absolute;
+  top: 52vh;
+  right: 21vh;
+}
+
+.titlelink h1 {
+  font-family: georgia;
+  color: white;
+  text-align: center;
+  margin-top: -1vh;
+  margin-bottom: -1vh;
+}
+
+
