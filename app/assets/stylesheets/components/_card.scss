@@ -1,12 +1,12 @@
 .card {
-  height: 52vh;
+  height: 60vh;
   background-size: cover !important;
   background-position: center;
   color: white;
   position: relative;
   margin-bottom: 7vh;
   border-radius: 0.5vh;
-  width: 27vw;
+  width: 25vw;
   display: inline-block;
   margin-left: 2vh;
 }
@@ -14,11 +14,12 @@
 .card h2 {
   font-size: 5vh;
   padding: 3vh;
-  font-family: georgia;
+  font-family: lato;
   color: white;
   position: absolute;
   top: 24vh;
   letter-spacing: 1px;
+  text-shadow: 2px 3px #F9C0C3;
 }
 
 .cards {

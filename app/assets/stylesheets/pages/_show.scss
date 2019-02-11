@@ -9,6 +9,8 @@
   position: absolute;
   left: -1vh;
   bottom: 13vh;
+  font-family: 'open sans';
+
 }
 
 .linkback a {
@@ -34,7 +36,7 @@
 
 /* SHOW PAGE INFO */
 .cocktailname {
-  font-family: georgia;
+  font-family: lato;
   font-size: 9vh;
   color:#523E40;
 }
@@ -58,6 +60,8 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   opacity: 0.5;
+  font-family: 'open sans';
+
 }
 
 .ingredienttable {
@@ -70,6 +74,7 @@
   margin-bottom:0vh!important;
   margin-left: 1.5vh;
   border-left:9px solid #F4FFDD;
+  font-family: 'open sans';
 }
 
 .scrolltable {
@@ -126,6 +131,8 @@
   height: 28vh;
   overflow-y: scroll;
   display: block;
+  font-family: 'open sans';
+
 }
 
 /* ADD INGREDIENT MODAL */

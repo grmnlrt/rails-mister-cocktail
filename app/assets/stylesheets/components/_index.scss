@@ -19,11 +19,13 @@
   font-size:2vh;
   border: 1px solid;
   padding: 2.5vh;
+  font-family: 'open sans';
 }
 
 .createbutton {
   text-align:center;
   margin-top: 8vh;
+  font-family: 'open sans';
 }
 
 /* CARD CONTAINER */
@@ -52,7 +54,7 @@
 
 /* TITLE */
 .title {
-  font-family: georgia;
+  font-family: 'Lato';
   color: white;
   font-size: 51px;
   text-align: center;
@@ -70,7 +72,7 @@
 }
 
 .titlelink h1 {
-  font-family: georgia;
+  font-family: 'Lato';
   color: white;
   text-align: center;
   margin-top: -1vh;
@@ -90,9 +92,9 @@
 
 .description {
   color: black;
-  font-size: 29px;
+  font-size: 26px;
   width: 30vw;
-  font-family: georgia;
+  font-family: Lato;
   text-align: center;
   border-bottom: 2px solid beige;
   border-top: 2px solid beige;
