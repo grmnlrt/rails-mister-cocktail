@@ -49,10 +49,42 @@ a.scrolldown:hover {
 
 /* CARD CONTAINER */
 .cardcontainer {
-  margin-top: 4vh;
+  margin-top: -5vh;
   margin-left: 0vh;
   background-color: white;
-  height: 100vh;
+  height: 120vh;
+  padding-top: 1vh;
+}
+
+.cardcontainer h1 {
+  margin-left: 5vh;
+  margin-bottom: -8vh;
+  font-family: lato;
+  font-weight: bold;
+  font-size: 12vh;
+  color:#523E40;
+}
+
+.moodoutline {
+  margin-left: 5vh;
+  margin-bottom: 7vh;
+  font-family: lato;
+  font-weight: bold;
+  font-size: 12vh;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: lightgrey;
+}
+
+.moodpinkoutline {
+  margin-left: 5vh;
+  margin-bottom: 7vh;
+  font-family: lato;
+  font-weight: bold;
+  font-size: 12vh;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-stroke-color: #F9C0C3;
 }
 
 .row {
@@ -85,7 +117,7 @@ a.scrolldown:hover {
 }
 
 .title strong {
-  text-shadow: 4px 4px #F9C0C3;
+  text-shadow: 5px 5px #F9C0C3;
  }
 
 .titlelink {
@@ -106,25 +138,21 @@ a.scrolldown:hover {
 }
 
 /* DESCRIPTION CONTAINER */
-.descriptioncontainer {
+/*.descriptioncontainer {
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  height: 100vh;
-  margin-bottom: -4vh;
+  height: 75vh;
   margin-top: -2vh;
-}
+}*/
 
 .description {
-  color: black;
-  font-size: 31px;
-  width: 80vw;
   font-family: 'open sans';
-  font-weight: thin;
   font-weight: lighter;
-  margin-left: -20vh;
+  position: relative;
+  width: 62vw;
+  left: 62vh;
+  bottom: -18vh;
+  letter-spacing: 2.5px;
+  font-size: 15px;
 }
 
 /* CREATE A COCKTAIL SIDEBAR */

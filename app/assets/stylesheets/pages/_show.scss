@@ -10,7 +10,6 @@
   left: -1vh;
   bottom: 13vh;
   font-family: 'open sans';
-
 }
 
 .linkback a {
@@ -26,6 +25,7 @@
 .show-image {
   height:100vh;
   width:94vw;
+  border-right: 14px solid beige;
 }
 
 .layout {
@@ -37,7 +37,7 @@
 /* SHOW PAGE INFO */
 .cocktailname {
   font-family: lato;
-  font-size: 9vh;
+  font-size: 11vh;
   color:#523E40;
 }
 

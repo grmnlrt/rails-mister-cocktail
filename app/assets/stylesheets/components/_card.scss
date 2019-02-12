@@ -12,7 +12,7 @@
 }
 
 .card h2 {
-  font-size: 5vh;
+  font-size: 7vh;
   padding: 3vh;
   font-family: lato;
   color: white;
@@ -26,6 +26,8 @@
   overflow-x: scroll;
   white-space: nowrap;
   width: 98vw;
+  margin-top: -87vh;
+  z-index: 22;
 }
 
 .card-link {
