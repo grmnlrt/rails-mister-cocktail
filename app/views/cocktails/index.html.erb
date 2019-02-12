@@ -28,26 +28,29 @@
 <!---------------side bar ----------------->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="newcocktailform">
-     <%= simple_form_for @cocktail do |f| %>
-          <%= f.input :name %>
-
-           <%= f.input :photo %>
-          <%= f.input :photo_cache, as: :hidden %>
-
-          <%= f.button :submit, class: 'btn btn-primary' %>
-      <% end %>
-      </div>
+    <div class="createsidebartitle">
+      Create your own mood cocktail
     </div>
-    <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
+      <div class="newcocktailform">
+       <%= simple_form_for @cocktail do |f| %>
+            <%= f.input :name %>
 
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
+             <%= f.input :photo %>
+            <%= f.input :photo_cache, as: :hidden %>
+
+            <%= f.button :submit, class: 'btn btn-primary' %>
+        <% end %>
+        </div>
+      </div>
+        <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "325px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
   <!----------------scroll down anchor------------------>
   <div class="scrolldowndiv">
      <a href="#scrolldown" class="scrolldown">↓ scroll down</a>
@@ -57,13 +60,15 @@
       <div class="descriptioncontainer">
        <div data-aos="fade-down"   data-aos-duration="5000">
         <div class="description">
-          <p><strong>bespoke</strong> and <strong>carefully crafted cocktails</strong> designed to match your <strong>mood</strong></p>
+          <p><strong>Mood Match</strong> is a personalised cocktail service that carefully crafts and creates bespoke cocktails designed to match your mood, for every occasion.
+            <br>Explore below our current collection for SS 2019.</p>
         </div>
       </div>
     </div>
   </div>
   <!----------------CARDS CONTAINER------------------->
     <div class="cardcontainer">
+      <h1>Explore</h1>
     <!----------------CARDS------------------->
      <div class="cards">
       <% @cocktails.each do |cocktail| %>
