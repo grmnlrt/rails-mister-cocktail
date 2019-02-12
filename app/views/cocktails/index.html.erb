@@ -20,27 +20,34 @@
     <%= link_to "+ create your own mood cocktail", new_cocktail_path, class: "create-button" %>
     </div>
   </div>
+  <!----------------scroll down anchor------------------>
+  <div class="scrolldowndiv">
+     <a href="#scrolldown" class="scrolldown">↓ scroll down</a>
+  </div>
   <!---------------second page------------------>
-    <div class="descriptioncontainer">
-     <div data-aos="fade-down"   data-aos-duration="5000">
-      <div class="description">
-        <p><strong>bespoke</strong> and <strong>carefully crafted cocktails</strong> designed to match your <strong>mood</strong></p>
+   <div id="scrolldown">
+      <div class="descriptioncontainer">
+       <div data-aos="fade-down"   data-aos-duration="5000">
+        <div class="description">
+          <p><strong>bespoke</strong> and <strong>carefully crafted cocktails</strong> designed to match your <strong>mood</strong></p>
+        </div>
       </div>
     </div>
   </div>
   <!----------------CARDS CONTAINER------------------->
-  <div class="cardcontainer">
-  <!----------------CARDS------------------->
-   <div class="cards">
-    <% @cocktails.each do |cocktail| %>
-      <div class="card"
-        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-               url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill unless cocktail.photo.blank? %>')">
-          <h2><%= cocktail.name.downcase %></h2>
-           <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
-         </div>
-        <% end %>
-      </div>
+
+    <div class="cardcontainer">
+    <!----------------CARDS------------------->
+     <div class="cards">
+      <% @cocktails.each do |cocktail| %>
+        <div class="card"
+          style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+                 url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill unless cocktail.photo.blank? %>')">
+            <h2><%= cocktail.name.downcase %></h2>
+             <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+           </div>
+          <% end %>
+        </div>
   <!------end of container tag------->
   </div>
   <!-----CSS animation------->

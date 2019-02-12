@@ -28,6 +28,25 @@
   font-family: 'open sans';
 }
 
+/* SCROLL DOWN */
+a.scrolldown {
+  color:white;
+  font-family: 'open sans';
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+a.scrolldown:hover {
+  text-decoration: none;
+}
+
+.scrolldowndiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 14vh;
+}
+
 /* CARD CONTAINER */
 .cardcontainer {
   margin-top: 4vh;
@@ -42,14 +61,17 @@
 
 /* VIDEO */
 .video {
-  object-fit: cover!important;
-  min-width: 100%;
-  max-width: 100%;
-  opacity:0.6;
+  object-fit: cover !important;
+  min-width: 100vw;
+  max-width: 100vw;
+  opacity: 0.6;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .videocontainer {
   background:#F9C0C3;
+  height: 106vh;
 }
 
 /* TITLE */
@@ -88,6 +110,7 @@
   align-items: center;
   height: 50vh;
   margin-bottom: -4vh;
+  margin-top: -2vh;
 }
 
 .description {
