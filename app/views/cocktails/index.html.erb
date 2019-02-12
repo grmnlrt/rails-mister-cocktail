@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>in the mood?</title>
+  <meta charset="UTF-8">
+  <title>MoodMatch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:300,400" rel="stylesheet">
 </head>
@@ -11,15 +13,41 @@
     <%= video_tag "cocktail1.mov", controls: false, autoplay: true, muted:
     true, loop: true, class: "video"  %>
   </div>
-  <!----------------landing page title------------------>
+  <!----------------in the mood for ----------------->
   <div class="titlelink">
     <h1>what are you</h1>
     <div class="title">in the <strong>mood</strong></div>
     <h1>for today?</h1>
-    <div class=createbutton>
-    <%= link_to "+ create your own mood cocktail", new_cocktail_path, class: "create-button" %>
+<!-------------create button------------------>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+    <div class="createbutton" >
+      <p> + create your own mood cocktail </p>
     </div>
+      </span>
   </div>
+<!---------------side bar ----------------->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="newcocktailform">
+     <%= simple_form_for @cocktail do |f| %>
+          <%= f.input :name %>
+
+           <%= f.input :photo %>
+          <%= f.input :photo_cache, as: :hidden %>
+
+          <%= f.button :submit, class: 'btn btn-primary' %>
+      <% end %>
+      </div>
+    </div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
   <!----------------scroll down anchor------------------>
   <div class="scrolldowndiv">
      <a href="#scrolldown" class="scrolldown">↓ scroll down</a>
@@ -35,7 +63,6 @@
     </div>
   </div>
   <!----------------CARDS CONTAINER------------------->
-
     <div class="cardcontainer">
     <!----------------CARDS------------------->
      <div class="cards">
