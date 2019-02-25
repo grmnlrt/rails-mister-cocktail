@@ -42,6 +42,11 @@ gem 'cloudinary', '~> 1.9.1'
 gem 'carrierwave', '~> 1.2'
 
 
+source "https://rubygems.org"
+ruby "2.5.1"
+
+
+
 # Front gem
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
