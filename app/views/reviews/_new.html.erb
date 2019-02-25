@@ -1,6 +1,6 @@
 <div class="modaltitle modalreview">Add a review</div>
 <%= simple_form_for [cocktail, review] do |f| %>
-  <%= f.input :rating, collection: 0..5 %>
   <%= f.input :content %>
+  <%= f.input :rating, collection: 0..5 %>
   <%= f.submit class: "addmodal"%>
 <% end %>

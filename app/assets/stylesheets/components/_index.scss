@@ -4,6 +4,15 @@
 @import "banner";
 @import "card";
 
+.secondpage {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    margin-top:-5.5vh;
+}
+
 /* CREATE A COCKTAIL */
 .create-button:hover {
   color: white;
@@ -16,7 +25,7 @@
 .createbutton {
   text-align: center;
   margin-top: 8vh;
-  font-family: 'open sans';
+  font-family: 'Open Sans', sans-serif;
   color: white;
   text-decoration: none;
   font-size: 2vh;
@@ -31,7 +40,7 @@
 /* SCROLL DOWN */
 a.scrolldown {
   color:white;
-  font-family: 'open sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   letter-spacing: 1px;
 }
@@ -49,26 +58,27 @@ a.scrolldown:hover {
 
 /* CARD CONTAINER */
 .cardcontainer {
-  margin-top: -5vh;
+  margin-top: -8vh;
   margin-left: 0vh;
   background-color: white;
   height: 120vh;
-  padding-top: 1vh;
+  padding-top: 8vh;
 }
 
 .cardcontainer h1 {
   margin-left: 5vh;
   margin-bottom: -8vh;
-  font-family: lato;
+  font-family: 'Playfair Display', serif;
   font-weight: bold;
   font-size: 12vh;
   color:#523E40;
+  font-weight: lighter;
 }
 
 .moodoutline {
   margin-left: 5vh;
   margin-bottom: 7vh;
-  font-family: lato;
+  font-family: 'Playfair Display', serif;
   font-weight: bold;
   font-size: 12vh;
   -webkit-text-fill-color: white;
@@ -79,7 +89,7 @@ a.scrolldown:hover {
 .moodpinkoutline {
   margin-left: 5vh;
   margin-bottom: 7vh;
-  font-family: lato;
+  font-family: 'Playfair Display', serif;
   font-weight: bold;
   font-size: 12vh;
   -webkit-text-fill-color: white;
@@ -103,12 +113,12 @@ a.scrolldown:hover {
 
 .videocontainer {
   background:#F9C0C3;
-  height: 106vh;
+  height: 109.5vh;
 }
 
 /* TITLE */
 .title {
-  font-family: 'Lato';
+  font-family: 'Playfair Display', serif;
   color: white;
   font-size: 68px;
   text-align: center;
@@ -130,27 +140,20 @@ a.scrolldown:hover {
 }
 
 .titlelink h1 {
-  font-family: 'Lato';
+  font-family: 'Playfair Display', serif;
   color: white;
   text-align: center;
-  margin-top: -1vh;
+  margin-top: 1vh;
   margin-bottom: -1vh;
 }
 
-/* DESCRIPTION CONTAINER */
-/*.descriptioncontainer {
-  background-color: white;
-  height: 75vh;
-  margin-top: -2vh;
-}*/
-
 .description {
-  font-family: 'open sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   position: relative;
   width: 62vw;
   left: 62vh;
-  bottom: -18vh;
+  bottom: -16vh;
   letter-spacing: 2.5px;
   font-size: 15px;
 }
@@ -191,7 +194,7 @@ a.scrolldown:hover {
 }
 
 .createsidebartitle {
-  font-family: 'lato';
+  font-family: 'Playfair Display', serif;
   font-size: 5vh;
   width: 19vw;
   margin-left: 3vh;
@@ -219,4 +222,31 @@ a.scrolldown:hover {
 
 .form-control {
   width:85%;
+}
+
+.explorescroll{
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  left: 185vh;
+  bottom: -33vh;
+  color:#523E40;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  align-items: center;
+  align-content: center;
+  height: 11vh;
+  padding-top: 7vh;
+}
+
+.footer p {
+  opacity:0.7;
 }

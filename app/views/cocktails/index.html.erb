@@ -5,7 +5,7 @@
   <title>MoodMatch</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Playfair+Display" rel="stylesheet">
 </head>
 <body>
   <!----------------LANDING PAGE VIDEO------------------>
@@ -56,42 +56,54 @@
      <a href="#scrolldown" class="scrolldown">↓ scroll down</a>
   </div>
   <!---------------second page------------------>
+<div class="secondpage">
    <div id="scrolldown">
-      <div data-aos="fade-down"   data-aos-duration="5000">
-        <div class="description">a collection of bespoke and personalised cocktails carefully curated to match your mood </div>
+    <div data-aos="fade-down" data-aos-duration="1500">
+      <div class="description">a collection of bespoke and personalised cocktails carefully curated to match your mood </div>
+    </div>
   <!----------------CARDS CONTAINER------------------->
-    <div class="cardcontainer">
-      <h1>moods</h1>
-      <h1 class="moodoutline">moods</h1>
-      <h1 class="moodpinkoutline">moods</h1>
-      <h1 class="moodoutline">moods</h1>
-      <h1 class="moodpinkoutline">moods</h1>
-      <h1 class="moodoutline">moods</h1>
-      <h1 class="moodpinkoutline">moods</h1>
-      <h1 class="moodoutline">moods</h1>
-      <h1 class="moodpinkoutline">moods</h1>
-      <h1 class="moodoutline">moods</h1>
-      <h1 class="moodpinkoutline">moods</h1>
-      <h1 class="moodoutline">moods</h1>
-      <h1 class="moodpinkoutline">moods</h1>
-    <!----------------CARDS------------------->
-     <div class="cards">
-      <% @cocktails.each do |cocktail| %>
-        <div class="card"
-          style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-                 url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill unless cocktail.photo.blank? %>')">
-            <h2><%= cocktail.name.downcase %></h2>
-             <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
-           </div>
-          <% end %>
+        <div class="explorescroll">explore → </div>
+        <div class="cardcontainer">
+          <div data-aos="fade-right" data-aos-duration="1500">
+            <h1>moods</h1>
+            <h1 class="moodoutline">moods</h1>
+            <h1 class="moodpinkoutline">moods</h1>
+            <h1 class="moodoutline">moods</h1>
+            <h1 class="moodpinkoutline">moods</h1>
+            <h1 class="moodoutline">moods</h1>
+            <h1 class="moodpinkoutline">moods</h1>
+            <h1 class="moodoutline">moods</h1>
+            <h1 class="moodpinkoutline">moods</h1>
+            <h1 class="moodoutline">moods</h1>
+            <h1 class="moodpinkoutline">moods</h1>
+            <h1 class="moodoutline">moods</h1>
+            <h1 class="moodpinkoutline">moods</h1>
+          </div>
+        <!----------------CARDS------------------->
+         <div class="cards">
+          <% @cocktails.each do |cocktail| %>
+            <div class="card"
+              style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+                     url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill unless cocktail.photo.blank? %>')">
+                <h2><%= cocktail.name.downcase %></h2>
+                 <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+               </div>
+              <% end %>
+            </div>
+          </div>
         </div>
+  <!------ footer ------>
+      <footer class="footer">
+        <p>©
+          <script> document.write(new Date().getFullYear());</script>
+        </p>
+      </footer>
+      <!------end of container tag------->
       </div>
     </div>
-  <!------end of container tag------->
-  </div>
-  <!-----CSS animation------->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+      <!-----CSS animation------->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </body>

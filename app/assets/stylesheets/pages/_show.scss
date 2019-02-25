@@ -9,7 +9,7 @@
   position: absolute;
   left: -1vh;
   bottom: 13vh;
-  font-family: 'open sans';
+  font-family: 'Open Sans', sans-serif;
 }
 
 .linkback a {
@@ -36,7 +36,7 @@
 
 /* SHOW PAGE INFO */
 .cocktailname {
-  font-family: lato;
+  font-family: 'Playfair Display', serif;
   font-size: 11vh;
   color:#523E40;
 }
@@ -60,7 +60,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   opacity: 0.5;
-  font-family: 'open sans';
+  font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -74,7 +74,8 @@
   margin-bottom:0vh!important;
   margin-left: 1.5vh;
   border-left:9px solid #F4FFDD;
-  font-family: 'open sans';
+  font-family: 'Open Sans', sans-serif;
+  font-weight:lighter;
 }
 
 .scrolltable {
@@ -105,7 +106,6 @@
 .reviews {
   font-size: 2vh;
   margin-top: 2vh;
-  margin-left: 1vh;
 }
 
 .review {
@@ -131,8 +131,8 @@
   height: 28vh;
   overflow-y: scroll;
   display: block;
-  font-family: 'open sans';
-
+  font-family: 'Open Sans', sans-serif;
+  font-weight:lighter;
 }
 
 /* ADD INGREDIENT MODAL */
@@ -197,7 +197,7 @@
 /* ADD REVIEW MODAL */
 #myModal1 {
   top: 13vh;
-  right: -165vh;
+  right: -56vh;
   outline: none;
 }
 
@@ -208,6 +208,8 @@
   border-radius: 17px!important;
   font-size: 12px!important;
   padding:9px;
+  position: relative;
+  right: -44vh;
 }
 
 .modalreview {
