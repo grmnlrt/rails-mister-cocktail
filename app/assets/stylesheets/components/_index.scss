@@ -13,6 +13,22 @@
     margin-top:-5.5vh;
 }
 
+/* LOGO */
+.logo {
+  color: white;
+  position: relative;
+  left: 5vh;
+  bottom: 106vh;
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  padding: 1vh;
+  line-height: 6vh;
+}
+
+.logomatch {
+  color:#F9C0C3;
+}
+
 /* CREATE A COCKTAIL */
 .create-button:hover {
   color: white;
@@ -241,7 +257,6 @@ a.scrolldown:hover {
   background-color: white;
   font-family: 'Open Sans', sans-serif;
   font-size: 11px;
-  align-items: center;
   align-content: center;
   height: 11vh;
   padding-top: 7vh;
@@ -249,4 +264,17 @@ a.scrolldown:hover {
 
 .footer p {
   opacity:0.7;
+}
+
+a.githublink {
+  opacity:0.7;
+  text-decoration: none;
+  color:black;
+  margin-right:3vh;
+}
+
+a.githublink:hover {
+  text-decoration: none;
+  color:black;
+  opacity:1;
 }

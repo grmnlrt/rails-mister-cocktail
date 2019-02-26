@@ -72,7 +72,6 @@
 .table {
   font-size: 13px;
   margin-bottom:0vh!important;
-  margin-left: 1.5vh;
   border-left:9px solid #F4FFDD;
   font-family: 'Open Sans', sans-serif;
   font-weight:lighter;
@@ -94,8 +93,16 @@
 
 .table > tbody > tr > td {
   border-top:1px solid beige!important;
-  text-align:center!important;
+  text-align:center;
   color:#523E40;
+}
+
+.a {
+  text-align:right;
+}
+
+.table > tbody > tr > td.a {
+    text-align:right;
 }
 
 /* REVIEW COMMENTS*/
@@ -151,15 +158,16 @@
 
 .modalbtn {
   border-radius: 50%;
-  padding: 2px;
+  padding: 0px;
   background-color: #F9C0C3;
   color: white;
   border: 1px solid #F9C0C3;
-  width: 2vw;
-  font-size: 15px;
+  width: 1.5vw;
+  font-size: 13px;
   font-weight: lighter;
-  margin-right: 9px;
-  margin-top: -9px;
+  margin-top: -13px;
+  height: 3vh;
+  margin-right: 0.5vh;
 }
 
 .modalbtn:hover {
