@@ -5,12 +5,12 @@
 @import "card";
 
 .secondpage {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    margin-top:-5.5vh;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  margin-top: -14.5vh;
 }
 
 /* LOGO */
@@ -20,9 +20,9 @@
   left: 5vh;
   bottom: 106vh;
   font-family: 'Playfair Display', serif;
-  font-size: 52px;
+  font-size: 39px;
   padding: 1vh;
-  line-height: 6vh;
+  line-height: 4vh;
 }
 
 .logomatch {
@@ -69,7 +69,7 @@ a.scrolldown:hover {
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: 14vh;
+  bottom: 24vh;
 }
 
 /* CARD CONTAINER */
