@@ -7,10 +7,14 @@
 </div>
 <div class="container">
   <div class="row">
-  <div class="row">
     <% @cocktails.each do |cocktail| %>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path cocktail.photo, width: 400, height: 500, crop: :fill %>');">
+      <div class="col-12 col-md-6 col-lg-3">
+        <% if cocktail.photo? %>
+          <% background_url = cl_image_path cocktail.photo, width: 400, height: 500, crop: :fill %>
+        <% else %>
+          <% background_url = 'https://source.unsplash.com/500x400/?cocktail' %>
+        <% end %>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= background_url %>');">
           <div class="card-description">
             <h2><%= cocktail.name %></h2>
           </div>
@@ -18,6 +22,5 @@
         </div>
       </div>
     <% end %>
-  </div>
   </div>
 </div>

@@ -37,11 +37,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Front gem
 gem 'autoprefixer-rails'
-gem 'bootstrap-sass', '~> 3.3'
 gem 'font-awesome-sass'
 gem 'simple_form'
 
-gem 'figaro'
 gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
 
@@ -49,6 +47,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-byebug'
+  gem 'dotenv-rails'
 end
 
 group :development do
