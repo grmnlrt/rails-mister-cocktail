@@ -1,10 +1,8 @@
 <div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h1><%= @cocktail.name %></h1>
-      <%= link_to "Back to all cocktails", root_path %>
-    </div>
-  </div>
+
+  <h1><%= @cocktail.name %></h1>
+  <%= link_to "Back to all cocktails", root_path %>
+
   <div class="row">
     <div class="col-sm-12 col-md-6">
       <h3>Recipe</h3>
@@ -33,32 +31,27 @@
       <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <h3>Reviews</h3>
-      <% if @cocktail.reviews.empty? %>
-        <p>Be the first to let a review</p>
-      <% else %>
-        <ul class="list-group">
-          <% @cocktail.reviews.each do |review| %>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              <span class="badge badge-primary badge-pill">
-                <% counter = 0 %>
-                <% 5.times do %>
-                  <i class="fa <%= review.rating > counter ? 'fa-star' : 'fa-star-o' %>"></i>
-                  <% counter += 1 %>
-                <% end %>
-              </span>
-              <%= review.content %>
-            </li>
-          <% end %>
-        </ul>
+
+  <h3>Reviews</h3>
+  <% if @cocktail.reviews.empty? %>
+    <p>Be the first to let a review</p>
+  <% else %>
+    <ul class="list-group">
+      <% @cocktail.reviews.each do |review| %>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span class="badge badge-primary badge-pill">
+            <% counter = 0 %>
+            <% 5.times do %>
+              <i class="fa <%= review.rating > counter ? 'fa-star' : 'fa-star-o' %>"></i>
+              <% counter += 1 %>
+            <% end %>
+          </span>
+          <%= review.content %>
+        </li>
       <% end %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <%= render "reviews/new", cocktail: @cocktail, review: @review %>
-    </div>
-  </div>
+    </ul>
+  <% end %>
+
+  <%= render "reviews/new", cocktail: @cocktail, review: @review %>
+
 </div>
