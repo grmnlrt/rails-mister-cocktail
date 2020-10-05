@@ -92,7 +92,7 @@ GEM
       byebug (~> 10.0)
       pry (~> 0.10)
     puma (3.11.3)
-    rack (2.0.4)
+    rack (2.2.3)
     rack-proxy (0.6.4)
       rack
     rack-test (0.8.3)
