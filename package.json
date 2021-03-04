@@ -9,6 +9,6 @@
     "select2": "^4.0.6-rc.1"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.11.1"
+    "webpack-dev-server": "^3.1.11"
   }
 }
